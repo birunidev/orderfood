@@ -1,15 +1,11 @@
 const alertDisplay = $('.alert');
 
-let foodArr = [];
 window.onload = () => {
-    fetch('./food.js')
-        .then(res => res.json())
-        .then(res => {
-            foodArr = res;
-            loadContent(foodArr);
-        }
-        );
+    let foodArr = [...foods];
+    loadContent(foodArr);
 }
+
+
 let cardHTML = '';
 let resetCardHTML = '';
 let order = (id) => {
