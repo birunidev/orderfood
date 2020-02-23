@@ -1,0 +1,9 @@
+body {
+    font-family: 'Poppins';
+}
+.row {
+    height: 100vh;
+}
+.custom-toast{
+    position: fixed;
+}
