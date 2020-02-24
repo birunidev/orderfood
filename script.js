@@ -1,7 +1,7 @@
 const alertDisplay = $('.alert');
-
+let foodArr;
 window.onload = () => {
-    let foodArr = [...foods];
+    foodArr = [...foods];
     loadContent(foodArr);
 }
 
@@ -16,6 +16,7 @@ let order = (id) => {
     let filteredFood = foodArr;
     $(".toast").toast('show');
     $(".toast-body").text(`You Ordered ${food.name}`);
+    console.log(filteredFood)
     loadContent(filteredFood);
 };
 
